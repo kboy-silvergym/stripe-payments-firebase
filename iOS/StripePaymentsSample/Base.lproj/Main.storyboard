@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xQs-5b-KU9">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wzl-GH-oRa">
+            <objects>
+                <viewController id="xQs-5b-KU9" customClass="ViewController" customModule="StripePaymentsSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z0Q-rZ-ZOl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc0-sv-clu">
+                                <rect key="frame" x="109.5" y="427.5" width="195" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="カードを選択する"/>
+                                <connections>
+                                    <action selector="stripeButtonTapped:" destination="xQs-5b-KU9" eventType="touchUpInside" id="fwW-Or-WJQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFo-RA-wKY">
+                                <rect key="frame" x="207" y="327.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XCu-k3-CqF">
+                                <rect key="frame" x="131" y="297.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="7EY-jQ-XBI"/>
+                                    <constraint firstAttribute="height" constant="60" id="UBt-kw-gb2"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ij-41-L86">
+                                <rect key="frame" x="57" y="746" width="300" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.01208707165" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="1mT-I2-P4G"/>
+                                    <constraint firstAttribute="height" constant="60" id="8EZ-bg-h5k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="決済する">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="payButtonTapped:" destination="xQs-5b-KU9" eventType="touchUpInside" id="8aL-AF-lKX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wFo-RA-wKY" firstAttribute="leading" secondItem="XCu-k3-CqF" secondAttribute="trailing" constant="16" id="8NM-ss-Br7"/>
+                            <constraint firstItem="wFo-RA-wKY" firstAttribute="centerY" secondItem="XCu-k3-CqF" secondAttribute="centerY" id="Fxq-Zb-r1g"/>
+                            <constraint firstItem="MyK-33-Zst" firstAttribute="bottom" secondItem="4ij-41-L86" secondAttribute="bottom" constant="56" id="MoD-n7-dsY"/>
+                            <constraint firstItem="4ij-41-L86" firstAttribute="centerX" secondItem="z0Q-rZ-ZOl" secondAttribute="centerX" id="ZgE-FQ-2eO"/>
+                            <constraint firstItem="wFo-RA-wKY" firstAttribute="centerX" secondItem="z0Q-rZ-ZOl" secondAttribute="centerX" id="m7S-Ox-sH9"/>
+                            <constraint firstItem="Wc0-sv-clu" firstAttribute="top" secondItem="wFo-RA-wKY" secondAttribute="bottom" constant="100" id="mg2-Q9-APp"/>
+                            <constraint firstItem="Wc0-sv-clu" firstAttribute="centerY" secondItem="z0Q-rZ-ZOl" secondAttribute="centerY" id="nOf-3j-YH5"/>
+                            <constraint firstItem="Wc0-sv-clu" firstAttribute="centerX" secondItem="z0Q-rZ-ZOl" secondAttribute="centerX" id="zr5-e0-fjD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MyK-33-Zst"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="XCu-k3-CqF" id="PVs-0Y-CRX"/>
+                        <outlet property="cardNameLabel" destination="wFo-RA-wKY" id="e4h-oP-kLg"/>
+                        <outlet property="payButton" destination="4ij-41-L86" id="3R1-A3-2gK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YA4-A9-8yK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+</document>
