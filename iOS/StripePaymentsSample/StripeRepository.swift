@@ -43,7 +43,8 @@ class StripeRepository {
             let data: [String: Any] = [
                 "customerId": customerId,
                 "sourceId": sourceId,
-                "amount": amount
+                "amount": amount,
+                "idempotencyKey": UUID().uuidString
             ]
             self.functions.httpsCallable("createStripeCharge")
                 .call(data) { result, error in
