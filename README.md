@@ -1,7 +1,7 @@
 # stripe-payments-firebase
 <img src="https://camo.qiitausercontent.com/fe92f84374bd82cee961b599a94783062bf7e52e/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3131313336362f61393032393135322d663634352d373866342d626439612d3234313738386634323966352e706e67">
 
-This is the sample code for stripe payments with firebase in iOS app.
+This is the sample code for stripe payments with firebase on iOS app.
 
 ## What is stripe PAYMENTS
 
