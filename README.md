@@ -19,5 +19,8 @@ The PAYMENTS is used for making single payments features(ex selling goods).
 
 <img src="https://camo.qiitausercontent.com/d39fca8591855811b701a159d95f603fdfd8016d/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3131313336362f34363035336665332d303837352d633364362d396663332d3533643364353965326538642e676966" width=200>
 
-## Official documetns
+## Related Articles
+[「Firebase + stripe + iOS」でクレジットカード決済機能を作る | ita](https://qiita.com/k-boy/items/c99cc681c29a1b250b4a)
+
+## Official Documents
 https://stripe.com
